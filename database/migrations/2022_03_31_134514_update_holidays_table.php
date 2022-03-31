@@ -27,7 +27,7 @@ class UpdateHolidaysTable extends Migration
     public function down()
     {
         Schema::table('holidays', function (Blueprint $table) {
-            //
+            $table->dropColumn('hotel');
         });
     }
 }
