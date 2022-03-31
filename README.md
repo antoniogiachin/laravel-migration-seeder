@@ -5,3 +5,8 @@
     * php artisan make:seeder HolidaysTableSeeder
     * php artisan make:model Holiday
     * php artisan db:seed --class=HolidaysTableSeeder
+
+- Mi accorgo di aver dimenticato nella tabella di inserire il campo 'hotel'...
+    * faccio un php artisan make:migration update_holidays_table --table=holidays - aggiungo il valore dopo il prezzo
+    * con il comando php artisan migrate:fresh --seed rimuovo tutti i seed e rilancia da capo le migration, ora aggiungo al seed il valore di hotel e poi lo 'inietto'
+    *php artisan db:seed --class=HolidaysTableSeeder
